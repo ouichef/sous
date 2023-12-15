@@ -13,8 +13,9 @@ module Sous
   #
   # I always get myself into a situation where I refactor or change something and
   # it shouldn't be on this branch. This method assumes that I have commited the code that
-  # I want to save to my current branch and I can toss the rest in a stash, pop it in
-  # another branch and then commit and push it up and then return to the original branch
+  # I want to save to my current branch. I need to add the files that I want to
+  # add to the new file so I can toss them in a stash, pop it in another branch
+  # and then commit and push it up and then return to the original branch
   def self.commit_to_other_branch(new_branch, message)
     original_branch = `git rev-parse --abbrev-ref HEAD`.strip
     raise "Failed to get the current branch name" unless $?.success?
