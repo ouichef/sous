@@ -3,22 +3,22 @@
 require_relative "lib/sous/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "sous"
+  spec.name = "ouichef-sous"
   spec.version = Sous::VERSION
   spec.authors = ["ouichef"]
   spec.email = ["roman.turner@americastestkitchen.com"]
 
   spec.summary = "My lil helper"
-  spec.homepage = "https://github.com/ouichef/vscode_at_source"
+  spec.homepage = "https://github.com/ouichef/sous"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata[
     "source_code_uri"
-  ] = "https://github.com/ouichef/vscode_at_source"
+  ] = "https://github.com/ouichef/sous"
   spec.metadata[
     "changelog_uri"
-  ] = "https://github.com/ouichef/vscode_at_source/changelog"
+  ] = "https://github.com/ouichef/sous/changelog"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

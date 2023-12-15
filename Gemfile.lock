@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sous (0.1.0)
+    ouichef-sous (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -55,10 +55,10 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
+  ouichef-sous!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.21)
-  sous!
   syntax_tree
 
 BUNDLED WITH
