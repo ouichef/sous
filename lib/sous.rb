@@ -19,6 +19,7 @@ module Sous
     original_branch = `git rev-parse --abbrev-ref HEAD`.strip
     raise "Failed to get the current branch name" unless $?.success?
 
+    system("git add .") or raise "Failed to add changes"
     system("git stash") or raise "Failed to stash changes"
     system("git checkout -b \"#{new_branch}\"") or
       raise "Failed to create and switch to new branch"
