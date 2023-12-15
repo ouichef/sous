@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "sous"
+
+if ARGV.length != 2
+  puts "Usage: sous commit_to_other_branch 'new_branch' 'commit_message'"
+  exit 1
+end
+
+new_branch, message = ARGV
+
+begin
+  Sous.commit_to_other_branch(new_branch, message)
+rescue => e
+  puts "Error: #{e.message}"
+  exit 1
+end

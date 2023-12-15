@@ -1,0 +1,21 @@
+require: syntax_tree
+
+inherit_gem:
+  syntax_tree: config/rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.6
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Enabled: false
